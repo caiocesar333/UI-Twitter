@@ -1,13 +1,13 @@
 import './styles/global.css'
 
-export function App(){
+import { Layout, LayoutProps } from "./components/Layout/Layout"
+import { Main, MainProps } from "./components/Main/Main"
 
-  return(
-    <>
-     <h1 className="lg">Hello World</h1> 
-     <button className="bg-violet-500 font-medium px-4 py-2 rounded text-white hover:bg-violet-600">
-      Enviar
-     </button>
-    </>
-  )
+export function App() {
+
+  return (
+    <Layout>
+      <Main></Main>
+    </Layout>
+  );
 }

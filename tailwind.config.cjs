@@ -21,12 +21,12 @@ module.exports = {
       'dark-2': '#1C2733',
       'gray': '#5B7083',
       'red': '#F4245E',
+      'divgray': '#EBEEF0',
       white: '#FFFFFF',
       black: '#0F1419',
     },
     extend: {
       fontFamily: {
-        sans: 'Inter, sans-serif',
         sf: 'sf-compact, sans-serif'
       }
     },
