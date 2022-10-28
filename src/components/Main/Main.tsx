@@ -1,6 +1,8 @@
 import React from 'react';
-
 import { ButtonTweet } from '../Buttons/ButtonTweet';
+import { Cards } from '../Cards/Cards';
+import { CardsB } from '../Cards/CardsB';
+import { CardsC } from '../Cards/CardsC';
 
 import { Container, Header, NewTweet } from './style';
 
@@ -14,7 +16,7 @@ export function Main({ children }: MainProps) {
     <Container>
       <Header>
         <strong>Home</strong>
-        <img id="theme" src="src\assets\claro\theme.svg"></img>
+        <img className="pr-2 hover:cursor-pointer" id="theme" src="src\assets\claro\theme.svg"></img>
       </Header>
       <NewTweet>
         <div className='w-full flex'>
@@ -32,6 +34,9 @@ export function Main({ children }: MainProps) {
           <ButtonTweet></ButtonTweet>
         </div>
       </NewTweet>
+      <Cards></Cards>
+      <CardsB></CardsB>
+      <CardsC></CardsC>
     </Container>
   );
 }
