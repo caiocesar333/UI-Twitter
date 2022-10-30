@@ -13,8 +13,8 @@ export function Profile({ children }: ProfileTProps) {
         <Container>
             <img className="mr-2 rounded-full" src="src\assets\claro\pfp.svg"></img>
             <div className="flex flex-col"> 
-                <span className="font-sf">Jerome</span>
-                <span className="font-sf">@afonsoinocente</span>
+                <span className="font-bold">Jerome</span>
+                <span className="font-normal text-sm">@afonsoinocente</span>
             </div>
             <img className="ml-8" src="src\assets\claro\3dots.svg"></img>
         </Container>

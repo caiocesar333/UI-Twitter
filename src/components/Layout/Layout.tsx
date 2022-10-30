@@ -2,6 +2,7 @@ import React from "react";
 
 import Main from "../Main/Main"
 import Menu from "../Menu/Menu"
+import Sidebar from "../Sidebar/Sidebar"
 
 import { Container, Wrapper }from "./style"
 
@@ -16,7 +17,7 @@ export function Layout({ children}: LayoutProps){
             <Wrapper>
                 <Menu/>
                 <Main/>
-                {/* <SideBar/> */}
+                <Sidebar/>
             </Wrapper>
         </Container>
     )
