@@ -1,6 +1,8 @@
 import React from 'react';
 import { ButtonDefault } from '../Buttons/ButtonDefault';
 
+import { Profile } from '../Profiles/Profile';
+
 import { Logo } from './MenuIcons/Logo';
 import { HomeIcon } from './MenuIcons/HomeIcon';
 import { HashIcon } from './MenuIcons/HashIcon';
@@ -51,6 +53,7 @@ export function Menu({ children }: MenuProps) {
                 </MenuText>
             </Topside>
             <ButtonDefault />
+            <Profile/>
         </Container>
     )
 }
