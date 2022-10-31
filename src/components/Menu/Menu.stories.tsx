@@ -6,13 +6,7 @@ export default {
     title: 'Components/Menu',
     component: Menu,
     args: {
-        children:[<li>Explore</li>,
-                  <li>Notifications</li>,
-                  <li>Messages</li>,
-                  <li>Bookmarks</li>,
-                  <li>Lists</li>,
-                  <li>Profile</li>,
-                  <li>More</li>,
+        children:[
                 ],
         size: 'md'
     },

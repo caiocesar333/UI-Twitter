@@ -11,6 +11,7 @@ export const Container = styled.div`
   color: white;
   /* text-align: center; */
   /* justify-content: center; */
+  z-index: 1000;
 `;
 
 export const Wrapper = styled.div`

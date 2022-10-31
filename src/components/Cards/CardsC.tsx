@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Card, ProfileImage } from "./style"
 
-export interface CardsBProps {
+export interface CardsCProps {
     children?: any;
 }
 
 
-export function CardsC({ children }: CardsBProps) {
+export function CardsC({ children }: CardsCProps) {
     return (
         <Container>
             <ProfileImage>
