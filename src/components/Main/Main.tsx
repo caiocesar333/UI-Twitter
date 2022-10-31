@@ -5,6 +5,7 @@ import { CardsB } from '../Cards/CardsB';
 import { CardsC } from '../Cards/CardsC';
 
 import { Container, Header, NewTweet } from './style';
+import { Input } from './Input';
 
 export interface MainProps {
   children?: any;
@@ -12,6 +13,11 @@ export interface MainProps {
 
 
 export function Main({ children }: MainProps) {
+
+  const submitTweet = () =>{
+    alert("aloww")
+  }
+
   return (
     <Container>
       <Header>
@@ -21,7 +27,7 @@ export function Main({ children }: MainProps) {
       <NewTweet>
         <div className='w-full flex'>
           <img className="ml-2 rounded-full" src="src\assets\claro\pfp.svg"></img>
-          <h3 className="pl-2 text-center text-gray">What’s happening?</h3>
+          <Input/>
         </div>
         <div className='w-full flex py-2 justify-between'>
           <div className="flex">
@@ -31,7 +37,7 @@ export function Main({ children }: MainProps) {
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/emoji.svg"></img>
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/calendary.svg"></img>
           </div>
-          <ButtonTweet></ButtonTweet>
+          <ButtonTweet/>
         </div>
       </NewTweet>
       <Cards></Cards>
@@ -39,6 +45,7 @@ export function Main({ children }: MainProps) {
       <CardsC></CardsC>
     </Container>
   );
+
 }
 
 export default Main;
