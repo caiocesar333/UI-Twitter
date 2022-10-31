@@ -20,16 +20,16 @@ export function Main({ children }: MainProps) {
       </Header>
       <NewTweet>
         <div className='w-full flex'>
-          <img className="rounded-full" src="src\assets\claro\pfp.svg"></img>
-          <h3 className="pl-2">What’s happening?</h3>
+          <img className="ml-2 rounded-full" src="src\assets\claro\pfp.svg"></img>
+          <h3 className="pl-2 text-center text-gray">What’s happening?</h3>
         </div>
         <div className='w-full flex py-2 justify-between'>
           <div className="flex">
-            <img className="w-10 pl-4 ml-8" src="src/assets/claro/image.svg"></img>
-            <img className="w-10 pl-4" src="src/assets/claro/gif.svg"></img>
-            <img className="w-10 pl-4" src="src/assets/claro/poll.svg"></img>
-            <img className="w-10 pl-4" src="src/assets/claro/media.svg"></img>
-            <img className="w-10 pl-4" src="src/assets/claro/calendary.svg"></img>
+            <img className="w-10 pl-4 ml-8  hover:cursor-pointer " src="src/assets/claro/image.svg"></img>
+            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/gif.svg"></img>
+            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/poll.svg"></img>
+            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/media.svg"></img>
+            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/calendary.svg"></img>
           </div>
           <ButtonTweet></ButtonTweet>
         </div>

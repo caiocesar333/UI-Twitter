@@ -42,7 +42,7 @@ export function Menu({ children }: MenuProps) {
                     <DotsIcon />
                 </MenuButton>
                 <MenuText>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Home</span>
+                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer text-primary-blue">Home</span>
                     <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Explore</span>
                     <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Notifications</span>
                     <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Messages</span>

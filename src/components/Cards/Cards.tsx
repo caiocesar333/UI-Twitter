@@ -15,7 +15,7 @@ export function Cards({ children }: CardProps) {
 
             <Card>
                 <div className='flex'>
-                    <h4>Devon Lane</h4>
+                    <h4 className="font-bold mr-1">Devon Lane</h4>
                     <h6>@johndue</h6>
                 </div>
 

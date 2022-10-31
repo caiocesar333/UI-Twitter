@@ -15,7 +15,7 @@ export function CardsB({ children }: CardsBProps) {
 
             <Card>
                 <div className='flex'>
-                    <h4>Darlene Robertson</h4>
+                    <h4 className="font-bold mr-1">Darlene Robertson</h4>
                     <h6>@johndue</h6>
                 </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 
 import Main from "../Main/Main"
 import Menu from "../Menu/Menu"
@@ -19,6 +20,7 @@ export function Layout({ children}: LayoutProps){
                 <Main/>
                 <Sidebar/>
             </Wrapper>
+            <Footer/>
         </Container>
     )
 }
