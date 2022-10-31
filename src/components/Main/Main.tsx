@@ -28,7 +28,7 @@ export function Main({ children }: MainProps) {
             <img className="w-10 pl-4 ml-8  hover:cursor-pointer " src="src/assets/claro/image.svg"></img>
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/gif.svg"></img>
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/poll.svg"></img>
-            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/media.svg"></img>
+            <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/emoji.svg"></img>
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/calendary.svg"></img>
           </div>
           <ButtonTweet></ButtonTweet>
