@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    background: white
+    background: ${props=> props.theme.colors.background };
+    color: ${props=> props.theme.colors.text };
 `;
 
 
 export const Wrapper = styled.div`
-    width: 100vw
+    width: 100vw;
     height: 100%;
     max-width: 1280px;
     margin: 0 auto;

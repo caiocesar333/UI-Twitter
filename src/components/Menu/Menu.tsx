@@ -27,6 +27,11 @@ export interface MenuProps {
 
 
 export function Menu({ children }: MenuProps) {
+
+    const showError:any = () => {
+        window.location.href = "page404.html"
+    }
+
     return (
         <Container>
             <Logo />
@@ -42,14 +47,14 @@ export function Menu({ children }: MenuProps) {
                     <DotsIcon />
                 </MenuButton>
                 <MenuText>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer text-primary-blue">Home</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Explore</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Notifications</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Messages</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Bookmarks</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Lists</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">Profile</span>
-                    <span className="my-3 font-sf font-bold text-base hover:cursor-pointer">More</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer text-primary-blue">Home</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Explore</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Notifications</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Messages</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Bookmarks</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Lists</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">Profile</span>
+                    <span onClick={showError} className="my-3 font-sf font-bold text-base hover:cursor-pointer">More</span>
                 </MenuText>
             </Topside>
             <ButtonDefault />

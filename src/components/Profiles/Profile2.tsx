@@ -4,11 +4,11 @@ import { Slot } from '@radix-ui/react-slot';
 import { Container, Wrapper } from './styleSide'
 import { ButtonFollow } from '../Buttons/ButtonFollow';
 
-export interface ProfileTProps {
+export interface ProfileProps {
     children?: any;
 }
 
-export function Profile2({ children }: ProfileTProps) {
+export function Profile2({ children }: ProfileProps) {
 
     return (
         <div className="w-80 mb-4 pt-2 flex-row justify-center">

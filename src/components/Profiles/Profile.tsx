@@ -3,11 +3,11 @@ import { Slot } from '@radix-ui/react-slot';
 
 import { Container } from './style'
 
-export interface ProfileTProps {
+export interface ProfileProps {
     children?: any;
 }
 
-export function Profile({ children }: ProfileTProps) {
+export function Profile({ children }: ProfileProps) {
 
     return (
         <Container>

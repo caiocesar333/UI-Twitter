@@ -1,28 +1,36 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { ThemeContext } from 'styled-components'
+
 import { ButtonTweet } from '../Buttons/ButtonTweet';
 import { Cards } from '../Cards/Cards';
 import { CardsB } from '../Cards/CardsB';
 import { CardsC } from '../Cards/CardsC';
+import { CardNew } from '../Cards/CardNew';
+import { Input } from './Input';
 
 import { Container, Header, NewTweet } from './style';
-import { Input } from './Input';
+
+import { ProfileImage, Card} from "../Cards/style"
+
 
 export interface MainProps {
   children?: any;
+  toggleTheme(): void;
 }
 
+export function Main({ children, toggleTheme }: MainProps) {
 
-export function Main({ children }: MainProps) {
-
-  const submitTweet = () =>{
-    alert("aloww")
+  const addCard =() =>{
+    return ( <CardNew></CardNew> )
   }
+  
+  const { colors, title } = useContext(ThemeContext);
 
   return (
     <Container>
       <Header>
         <strong>Home</strong>
-        <img className="pr-2 hover:cursor-pointer" id="theme" src="src\assets\claro\theme.svg"></img>
+        <img onClick={toggleTheme} className="pr-2 hover:cursor-pointer" id="theme" src="src\assets\claro\theme.svg"></img>
       </Header>
       <NewTweet>
         <div className='w-full flex'>
@@ -37,7 +45,8 @@ export function Main({ children }: MainProps) {
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/emoji.svg"></img>
             <img className="w-10 pl-4 hover:cursor-pointer" src="src/assets/claro/calendary.svg"></img>
           </div>
-          <ButtonTweet/>
+          <button onClick={addCard} className="py-2 px-5 mr-8 bg-primary-blue opacity-50 text-white border border-primary-blue font-sf font-normal text-sm rounded-full hover:opacity-100"> 
+        Tweet</button>
         </div>
       </NewTweet>
       <Cards></Cards>

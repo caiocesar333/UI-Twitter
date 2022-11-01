@@ -1,6 +1,4 @@
-import React from "react";
-
-
+import React, {useState} from "react";
 
 export interface InputProps{
     children?: any;
@@ -9,9 +7,12 @@ export interface InputProps{
 
 export function Input({ children}: InputProps){
 
+    const [toDo, setToDo] = useState('')
+
+
     return (
-        <input name="name" onChange={event =>{
-        }} className="ml-3 outline-none font-normal" placeholder="Whats Happening?" ></input>
+        <input onChange={e=>setToDo(e.target.value) }  maxLength={15} name="name"
+         className="w-full ml-3 outline-none font-normal" placeholder="Whats Happening?" value={toDo} ></input>
     )
 }
 

@@ -11,13 +11,18 @@ export interface WhatsHappeningProps {
 
 
 export function WhatsHappening({ children }: WhatsHappeningProps) {
+
+  const showError: any = () => {
+    window.location.href = "page404.html"
+  }
+
   return (
     <Container>
       <span className="font-bold"> Whats Happening </span>
-      <New/>
-      <New2/>
-      <New3/>
-      <span className="text-primary-blue text-sm">Show More</span>
+      <New />
+      <New2 />
+      <New3 />
+      <span onClick={showError} className="text-primary-blue text-sm hover:cursor-pointer">Show More</span>
     </Container>
   );
 }
