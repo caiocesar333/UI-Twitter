@@ -6,8 +6,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    background: ${props => props.theme.colors.background};
-
     width: min(601px, 100%);
 
     @media screen and (min-width: 500px) {
